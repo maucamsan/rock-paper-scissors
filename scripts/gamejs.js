@@ -18,8 +18,42 @@ function playRound(playerSelection, computerSelection){
             return `You win! ${pSelection} beats ${cSelection}`
         }
     }
+    else if (pSelection === "paper"){
+        if (cSelection === "rock"){
+            return `You win! ${pSelection} beats ${cSelection}`
+        }
+        else if (cSelection === "paper"){
+            return "tie"
+        }
+        else{
+            return `You lose! ${cSelection} beats ${pSelection}`
+        }
+    }
+    else{
+        if (cSelection === "rock"){
+            return `You lose! ${cSelection} beats ${pSelection}`
+        }
+        else if (cSelection === "paper"){
+            return `You win! ${pSelection} beats ${cSelection}`
+        }
+        else{
+            return "tie"
+        }
+    }
+}
+
+function game(){
+    const pcNumberOfVictories = 0;
+    const playerNumberOfVictories = 0;
+    for (let i = 0; i < 5; i++) {
+        
+        const playerSelection = prompt("Rock, Paper or Scissors?").toLowerCase();
+        const computerSelection = computerPlay();
+        
+        console.log(playRound(playerSelection, computerSelection));
+        
+        
+    }
 }
 
 const playerSelection = "rock";
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
