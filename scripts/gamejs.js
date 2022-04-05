@@ -53,7 +53,7 @@ function game(){
         let roundResult = playRound(playerSelection, computerSelection) 
         console.log(roundResult);
         
-        if (/roundResult/.test("win")){
+        if (roundResult.includes("win")){
             playerNumberOfVictories++;
         }
         else{
