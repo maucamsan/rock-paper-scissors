@@ -1,0 +1,50 @@
+body{
+    height: auto;
+
+}
+
+button{
+    width: 10vh;
+}
+
+#gameDisplay{
+    display: flex;
+    justify-content: space-around;
+    border: 3px dotted green;
+}
+
+.panel{
+    width: 300px;
+    height: 200px;
+    display: inline-flex;
+    justify-content: center;
+    border: 3px dashed black;
+    
+}
+
+.playerPanel, .enemyPanel{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.buttonsPanel{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width: auto;
+    
+    
+}
+
+/* .buttonsPanel>button{
+
+} */
+
+.centralPanel{
+    align-self: center;
+}
