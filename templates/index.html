@@ -6,9 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, paper, scissors</title>
 
-    <script src="../scripts/gamejs.js"></script>
+    <link type="text/css" href="../static/styles.css" rel="stylesheet">
+    <script src="../scripts/gamejs.js" defer></script>
 </head>
 <body>
-    
+   
+  <!-- <div id="cacheImages"></div> -->
+
+    <div id="gameDisplay">
+        <div class="playerPanel panel">
+            <div class="selectionPanelDisplay">
+                
+                <!-- Here the options are displayed or animated when on play-->
+                <!-- On start button pressed, activate function with while loop displaying three different images for the options
+                     Once any option is selected, render only its corresponding image-->
+            </div>
+            <div class="buttonsPanel">
+                <div id="options">
+                    <button id = "rockButton" class="optionButton selectionRound">Rock</button>
+                    <button class="optionButton selectionRound">Paper</button>
+                    <button class="optionButton selectionRound">Scissors</button>
+                    <button id="restartButton">Restart</button>
+                </div>
+            </div>
+            <button id="startButton">Start Game</button>
+        </div>
+
+
+        <div class="centralPanel panel">
+                <p id="gameState">Show here game state</p>
+                <p id="roundWinner">Round Winner:</p>
+                <button id="nextRoundButton">NextRound</button>
+            
+        </div>
+
+        
+        <div class="enemyPanel panel">
+            <div class="enemySelectionPanelDisplay">
+                <!-- Here the options are displayed or animated when on play
+                On start button pressed, activate function with while loop displaying three different images for the options
+                     Once any option is selected, render only the computers choice-->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
