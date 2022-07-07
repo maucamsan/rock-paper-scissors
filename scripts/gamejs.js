@@ -12,14 +12,14 @@ gameState.innerText = "Start!"
 
 
 // For the enemy
-const enemyPaperImageString = "../static/Images/Paper.png";
-const enemyRockImageString = "../static/Images/Rock.png";
-const enemyScissorsImageString = "../static/Images/Scissors.png";
+const enemyPaperImageString = "./static/Images/Paper.png";
+const enemyRockImageString = "./static/Images/Rock.png";
+const enemyScissorsImageString = "./static/Images/Scissors.png";
 
 // For the player
-const paperImageString = "../static/Images/Paper.png";
-const rockImageString = "../static/Images/Rock.png";
-const scissorsImageString = "../static/Images/Scissors.png";
+const paperImageString = "./static/Images/Paper.png";
+const rockImageString = "./static/Images/Rock.png";
+const scissorsImageString = "./static/Images/Scissors.png";
 
 
 const restart = document.querySelector("#restartButton");
